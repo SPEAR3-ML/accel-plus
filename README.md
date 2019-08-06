@@ -53,7 +53,7 @@ End
 
 - `print_elem_value: type=TYPE, [famname=FAMNAME], FIELD1, [FIELD2],...`
 
-  Print out specified field values for selected elements. Only implemented for two types so far: StrMPole and Quad. If famanem is not specified, all elements of the type will be selected. Field types can be:
+  Print out specified field values for selected elements. Only implemented for two types so far: `StrMPole` and `Quad`. If famname is not specified, all elements of the type will be selected. Field types can be:
   ```
   StrMPole: Index, Length, PolyB[1], PolyB[2], PolyB[3], PolyA[1], PolyA[2], PolyA[3]
   Quad: Index, Length, K
@@ -62,9 +62,7 @@ End
 
   `$$$Print-Element_Values***********************`
 
-- `print_lat_summary`
-
-  (use this only if the lattice is a ring)
+- `print_lat_summary` (use this only if the lattice is a ring)
 
   Print out some lattice parameters, including the number of elements, the type and famname of the first element, tunes, chromaticities, closed orbit and Courant-Snyder parameters at the ring entrance (i.e., the entrance face of the first element). 
 
@@ -75,7 +73,7 @@ End
 
   `$$$Export-Elements***********************`
 
-- `correct_tune: type= TYPE, famname= FAMNAME1 FAMNAME2 [nux, nuy] [REPEAT]`
+- `correct_tune: type=TYPE, famname=FAMNAME1 FAMNAME2 [nux, nuy] [REPEAT]`
 
   Correct the betatron tunes, with target tunes specified in the square bracket. Two famnames are needed.  Type is usually Quad. If REPEAT appears, it will correct a second time.
 
@@ -83,7 +81,7 @@ End
 
   `$$$Correct Tunes***********************`
 
-- `correct_chrom: type= TYPE, famname= FAMNAME1 FAMNAME2 [chromx, chromy] [REPEAT]`
+- `correct_chrom: type=TYPE, famname=FAMNAME1 FAMNAME2 [chromx, chromy] [REPEAT]`
 
   Correct the chromaticities, with target chromaticities specified in the square bracket. Two famnames are needed. Type is usually StrMPole. If REPEAT appears, a second correction will be done.
 
@@ -91,18 +89,17 @@ End
 
   `$$$Correct chromaticities***********************`
 
-- `SET_MAX_NUM_THREADS=NUMBER`
+- `set_max_num_threads=NUMBER`
 
   Set the maximum number of threads in tracking. 
 
-- `MODIFY_ELEMENT: type=TYPE[, famname=FAMNAME][, index=INDEX], field=FIELD, value=VALUE | delta=DELTA`
+- `modify_element: type=TYPE[, famname=FAMNAME][, index=INDEX], field=FIELD, value=VALUE | delta=DELTA`
 
-  Modify the fields of lattice elements. When INDEX sis 0, all elements with specified type and famname are chosen. FIELD needs to be the same fields recognized by the setfield function of the corresponding element type. 
+  Modify the fields of lattice elements. When INDEX is 0, all elements with specified type and famname are chosen. FIELD needs to be the same fields recognized by the setfield function of the corresponding element type. 
 
-- `SET_FLAGS: [RADIATION=ON|OFF]|RADQE|LUMP][,CAVITY=ON|OFF][,CRABCAV=ON|OFF][,WAKE=ON|OFF]`
+- `set_flags: [RADIATION=ON|OFF]|RADQE|LUMP][,CAVITY=ON|OFF][,CRABCAV=ON|OFF][,WAKE=ON|OFF]`
 
-  Speficify flags for radiation, rf cavity, crab cavity, and wake types. 
-
+  Speficify flags for radiation, rf cavity, crab cavity, and wake types.
 
 ### Optics print out block
 
