@@ -374,7 +374,7 @@ int proc_lattice(ifstream& fin, ALine *(*pLine))
 						nlist = (*pLine)->findelements(plist, type, famname);
 					}
 					cout<<"$$$Print-Element_Values***********************"<<endl;
-					cout<<"#"<<type<<"\t"<<famname<<"\t"<<sline<<endl;
+					//cout<<"#"<<type<<"\t"<<famname<<"\t"<<sline<<endl;
 					for(int i=0;i<nlist;i++)
 					{
 						if(type=="StrMPole")
