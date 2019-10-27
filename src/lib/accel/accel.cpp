@@ -74,7 +74,7 @@ AccelElement* AccelElement::deserialize(istream& is)
 	is>>famname;
 	//std::string skip; // dummy
 	//std::getline(std::getline(is, skip, '"'), famname, '"');
-	cout << famname<<"\t";
+	//cout << famname<<"\t";
 	if (is.eof())
 	{	//cout<<"end of file"<<endl; 
 		return NULL; }
@@ -116,7 +116,7 @@ AccelElement* AccelElement::deserialize(istream& is)
 	*/
 
 	is>>type;
-	cout<<type<<endl;
+	//cout<<type<<endl;
 	if (is.eof())
 	{	cout<<"end of file"<<endl; return NULL; }
 	
