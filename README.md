@@ -1,11 +1,11 @@
-# ACCEL+
+# Accel+
 
 A fast ring dynamics simulation code.
 
 ## Usage
 
-X. Huang  
-10/22/2017
+- X. Huang  
+- 10/22/2017
 
 Setup commands are case insensitive.
 
