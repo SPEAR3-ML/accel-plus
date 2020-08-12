@@ -2,6 +2,37 @@
 
 A fast ring dynamics simulation code.
 
+## Compile Accel+
+
+We use [CMake](https://cmake.org/) to support multiple OS (Windows, macOS, Linux). Below are the brief instructions for compilation on different OS.
+
+### Compile on Windows
+
+Make sure you have a relatively new version of Visual Studio (2017+) installed on your PC. Install CMake by following [the official guide](https://cmake.org/install/). Then:
+
+1. Launch CMake
+2. Select the source code dir to be the `src` folder of this project
+3. Select the build binaries dir to be `{root}/build`, you should replace `{root}` with the path of this project on your PC
+4. Click the Configure button
+5. Click the Generate button
+6. Click the Open button to open the VS solution in Visual Studio
+7. Build the `accel+` solution for `Release`, or if you want to debug things, build it for `Debug` as either
+8. Grab your executable(s) from `build/bin` folder
+
+### Compile on Linux
+
+Make sure you have C++ compiler like gcc available on your Linux machine. Install CMake by following [the official guide](https://cmake.org/install/). Then:
+
+1. `mkdir` and `cd` to the `{root}/build` dir, replace `{root}` with the path of this project
+2. Run `ccmake {root}/src` to launch cmake text interface
+3. Press `c` to configure
+4. Press `g` to generate the makefiles and exit
+5. You know what to do next with the makefiles:)
+
+### Compile on macOS
+
+**WIP**
+
 ## Usage
 
 - X. Huang  
